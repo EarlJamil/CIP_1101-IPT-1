@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+    <!--This is where you put labels, info, and links-->
+    <!--legal elements: base, link, meta, script, style, title, and character encoding, CSS-->
+    <title>
+      PL-01-Exercises
+    </title>
+    <style>
+      body {
+        background-color: bisque;
+      }
+      .container {
+        display: flex;
+      }
+      .half {
+        flex: 1;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid black;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Practice Coding With Me</h1>
+    <p> Go here for HTML definition <a href ="PL-02-HTML.html">Click here.</a></p>
+    <div class="container">
+      <div class="half">
+        <h3>Declaration (DTD) or DOCTYPE</h3>
+        <p> - it specifies which version of HTML is being used</p>
+        <p> - specify what kind of document you would create</p>
+        <p> -  case insensitive</p>
+        <p> - standard today</p>
+        <p> -  grammar and vocabulary</p>
+
+
+        <h3>&lt;head&gt;</h3>
+        <p> - this follows the <em><b>opening</b></em> &lt;html&gt;</p>
+        <p> - this is where <b>legal elements</b> are seen</p>
+        <p> - provides <b>basic information</b> about the document </p>
+        <p> - keywords, character encoding, author info, description, and <b>CSS</b></p>
+
+        <h3>Metadata</h3>
+        <p> - <b>data and information</b> about data</p>
+        <p> - define keywords for search engines</p>
+        <p> - document content</p>
+        <p> - refresh interval (how the page reloads itself)</p>
+        <h4><li>Character Encoding</li></h4>
+            <p> &nbsp;&nbsp;&nbsp;- refers to the bit level of codes used to represent data that is inside the HTML document</p>
+
+        <h3>&lt;body&gt;</h3>
+        <p> - follow the closing <b>&lt;/head&gt;</b></p>
+        <p> - 99% are here in the body</p>
+        <h6> - 99% are here in the body</h6>
+      </div>
+
+      <div class="half">
+        <h2>Controlling Text Flow</h2>
+        <h4>
+          <li>Indent</li>
+          <li>Paragraph breaks</li>
+          <li>Line spacing</li>
+        </h4>
+        <p> HTML provides several means for indicating breaks in your paragraph</p>
+
+        <h3>&lt;br&gt;</h3>
+        <p> - insert a line break and go to the next line</p>
+        <h3>&lt;p&gt;</h3>
+        <p> - automatically add a blank line before it starts your new paragraph.</p>
+
+        <h2>Headings</h2>
+        <h3>
+          <p>- 1-6</p>
+        </h3>
+
+        <h2>Paragraph Indentation</h2>
+        <p>
+          <li><b>&amp;nbsp;</b></li>
+            <p> - most commonly used (beginning)</p>
+          <li><b>&lt;dd&gt; Definition Description</b></li>
+            <p> - move to the left and indent</p>
+          <li><b>&lt;blockquote&gt;</b></li>
+            <p> - indent <b>EVERYTHING</b> from the left margin</p>
+        <p>
+        <h3>Pre-formatted Text</h3>
+        <p> - keep all white spaces intact</p>
+
+        <h3>&lt;hr&gt;</h3>
+        <p> - add a horizontal line</p>
+        <p> - width: pixels(recommended) or percent</p>
+        <p> - 1 dot is equal to 200 pixels</p>
+        <p> - size: thickness; use of pixels</p>
+        <p> - NOSHADE: NO 3D</p>
+        <P> - Color: hexadecimal</P>
+      </div>
+      <div class="half">
+        <h2>Control Text with Character Elements</h2>
+        <p> - give you some <b><em>basic controls</em></b> over how text will display on a web browser</p>
+        <div>
+          <h3> Physical </h3>
+          <p> - how specific characters are to be formatted</p>
+          <p> Ex. &lt;sub&gt;, &lt;sup&gt;</p>
+          <h3> Logical </h3>
+          <p> - what kind of text is written inside the tags. For impaired persons.</p>
+          <li>Structural tags</li>
+          <li>Emphasize text</li>
+          <p> Ex. &lt;abbr&gt;, &lt;blockquote&gt;, &lt;del&gt;</p>
+        </div>
+        <div>
+          <h2>ITALICIZE TEXT</h2>
+          <li><b>&lt;i&gt;</b></li>
+            <p> - for italicize text</p>
+          <li><b> &lt;em&gt;</b></li>
+            <p> - emphasis an element</p>
+          <li><b> &lt;cite&gt;</b></li>
+            <p> - as a reference to an outside source</p>
+            <p> Ex. Book from <cite>Nobita</cite></p>
+          <li><b> &lt;dfn&gt;</b></li>
+            <p> - portion of a text of defining an instance</p>
+            <p> Ex. <dfn>HTML</dfn> is a basic building block</p>
+          <li><b> &lt;address&gt;</b></li>
+            <p> - contact information</p>
+          <li><b>&lt;var&gt;</b></li>
+            <p> - variable</p>
+        </div>
+        <div>
+          <h3>BOLDFACE TEXT</h3>
+          <li><b>&lt;b&gt;</b></li>
+            <p> - physical element; displays bold text</p>
+          <li><b> &lt;strong&gt;</b></li>
+            <p> - logical element;also displays bold text</p>
+        </div>
+      </div>
+      <div class="half">
+        <h2>SUBSCRIPT & SUPERSCRIPT</h2>
+        <li> <b>&lt;sup&gt;</b></li>
+          <p> - SUPERSCRIPT</p>
+        <li> <b>&lt;sub&gt;</b></li>
+          <p> - SUBSCRIPT</p>
+        <h2>MONOSPACED TEXT</h2>
+        <li><b>&lt;code&gt;</b></li>
+          <p> - fixed width-font; also indicated that the text is a portion of computer code</p>
+          <p> Ex. <code>bg-color</code></p>
+        <li><b>&lt;kbd&gt;</b></li>
+          <p> - keyboard; logical element</p>
+          <p> - contents are keyboard input</p>
+          <p> Ex. <kbd>Press Enter</kbd></p>
+        <li><b>&lt;sample&gt;</b></li>
+          <p> - logical element; sample output</p>
+          <p> Ex. <samp>File not found</samp></p>
+        <h3>STRIKETHROUGHS</h3>
+        <li><b>&lt;s&gt;</b></li>
+          <p> - physical element</p>
+        <li><b>&lt;del&gt;</b></li>
+          <p> - logical element; deleted element that is left in the page</p>
+        <h3>UNDERLINED TEXT</h3>
+        <li><b>&lt;u&gt;</b></li>
+          <p> - line underneath</p>
+        <li><b>&lt;ins&gt;</b></li>
+          <p> - inserted text; <b><em>logical element</em></b></p>
+          <p> - been inserted since the document</p>
+          
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title> Booleans </title>
+      <style> 
+        
+      </style> 
+    </head>
+  <body>
+    
+    <script> 
+      true
+      false 
+      console.log(3 < 5);
+      console.log(5 === '5');
+      // === to avoid conversion behavior
+
+      console.log(3 > 5 - 5); // 5-5 first 
+      // lower priority
+
+      if (true) {
+        console.log('hello');
+      } else {
+        console.log('else');
+      }
+
+
+      const age = 15;
+
+      if (age >= 18) {
+        console.log('You can drive');
+        console.log('Congrats!');
+      } else if (age >= 14) {
+        console.log('Almost there!');
+      } else {
+        console.log('You cannot drive');
+      }
+
+      console.log(false || false);
+      console.log(!false);
+
+      // falsy values = 0, '', NaN, undefined, null  
+        console.log('text' / 5);
+
+      // ternary operator
+        const result = 0 ? 'truthy' : 'falsy';
+        console.log(result);
+        
+      // guard operator 
+        // AND OPERATOR
+        false && console.log('hello'); // only run on the left and not the right 
+
+        const message = 5 && 'hello';
+        console.log(message);
+
+      // default operator
+        // OR OPERATOR
+        const results = 'falsy' || 'hello';
+        console.log(results);
+
+        const currency = undefined || 'USD';
+        console.log(currency);
+    </script> 
+  </body>
+</html>
